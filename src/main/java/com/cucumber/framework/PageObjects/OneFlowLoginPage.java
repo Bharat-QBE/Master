@@ -145,7 +145,7 @@ public static OneFlowLoginPage loginOutlook(String unamemail, String pwdmail) th
 		xpath_GenericMethod_Sendkeys(username_Xpath, username);
 		xpath_GenericMethod_Sendkeys(password_Xpath, password);
 		xpath_GenericMethod_Click(logginbtn_Xpath);
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		//driver.manage().timeouts().pageLoadTimeout(4, TimeUnit.MINUTES);
 		String titleofthehomepage = driver.getTitle();
 		Assert.assertNotEquals(titleofloginpage, titleofthehomepage);
@@ -173,6 +173,7 @@ public static OneFlowLoginPage loginOutlook(String unamemail, String pwdmail) th
 		driver.switchTo().defaultContent();
 		xpath_GenericMethod_Click(logoffbutton);
 		xpath_GenericMethod_Click(logoff);
+		waitFor(10);
 		String title = driver.getTitle();
 		Assert.assertEquals("Pega Platform", title, "logoff successful");
 		System.out.println("*******====*****Logout successfully Completed********====****");

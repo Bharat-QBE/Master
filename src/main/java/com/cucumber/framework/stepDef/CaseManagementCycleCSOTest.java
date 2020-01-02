@@ -61,7 +61,7 @@ public class CaseManagementCycleCSOTest {
 	@Then("Login to the user which has low work load")
 	public void login_to_the_user_which_has_low_work_load() throws Exception {
 		// Write code here that turns the phrase above into concrete actions
-		caseManagementCycleCSOPage.Login(Username, "OF@123456");
+		caseManagementCycleCSOPage.Login(Username, "OF@12345");
 		System.out.println("Low work loadUser logged into application");
 		
 	}

@@ -63,10 +63,8 @@ public class CaseManagementCycleTriagerTest {
 
 	@Then("^Login should be successfully completed$")
 	public void login_should_be_successfully_completed() throws Throwable {
-		System.out.println("Login succussfully completed");
 		Thread.sleep(15000);
-		
-
+		System.out.println("Login succussfully completed");
 		
 	}
 	
@@ -160,6 +158,7 @@ public class CaseManagementCycleTriagerTest {
 	@Then("Open the case and verify the case is routed to complex work basket with {string} and {string}")
 	public void open_the_case_and_verify_the_case_is_routed_to_complex_work_basket_with_and(String keywordinsubject, String policyorquotenoinsubject) throws Exception {
 	    // Write code here that turns the phrase above into concrete actions
+		Thread.sleep(5000);
 		subject = keywordinsubject + " " + policyorquotenoinsubject;
 		caseManagementCycleTriagerPage = new CaseManagementCycleTriagerPage(TestBase.getDriver());
 		caseManagementCycleTriagerPage.sendCaseManagementCycleTriagerObject(caseManagementCycleTriagerPage);

@@ -71,7 +71,7 @@ Feature: Case workflow management
 
     Examples: 
       | username  | password  | requesttype       | policyStatus | claimID    | insuredname | underwritername | underwriterregion | type   | policyorquoteno | ResolvedCompleted  |
-      | MVAUser_1 | OF@12345 | OFS Closing Check | Open         | AN 1234567 | Bharat      | Bhushan         | ACT               | Policy | 30A611814MVA    | RESOLVED-COMPLETED |
+      | MVAUser1  | OF@12345 | OFS Closing Check | Open         | AN 1234567 | Bharat      | Bhushan         | ACT               | Policy | 30A611814MVA    | RESOLVED-COMPLETED |
 
       
 
